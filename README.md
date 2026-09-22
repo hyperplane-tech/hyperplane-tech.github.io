@@ -2,7 +2,7 @@
 
 Site vitrine d'Hyperplane Tech, formation et conseil en intelligence artificielle.
 Site statique, sans étape de compilation, publié par GitHub Pages sur
-<https://www.hyperplane-tech.com>.
+<https://www.hyperplane.fr>.
 
 ## Structure
 
