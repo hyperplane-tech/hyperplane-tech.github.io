@@ -19,14 +19,14 @@
       </button>
 
       <nav class="nav" id="nav">
-        {% if page.url == '/' or page.url == '/index.html' %}
-        <a href="#formations">Formations</a>
-        <a href="#conseil">Conseil</a>
-        <a href="#approche">Approche</a>
-        <a href="#a-propos">À propos</a>
-        <a class="btn btn-primary" href="#contact">Nous écrire</a>
-        {% else %}
+        {% if page.url == '/mentions-legales.html' %}
         <a href="{{ '/' | relative_url }}">Retour au site</a>
+        {% else %}
+        <a href="{{ '/formations.html' | relative_url }}">Formations</a>
+        <a href="{% if page.url == '/' or page.url == '/index.html' %}#conseil{% else %}{{ '/' | relative_url }}#conseil{% endif %}">Conseil</a>
+        <a href="{% if page.url == '/' or page.url == '/index.html' %}#approche{% else %}{{ '/' | relative_url }}#approche{% endif %}">Approche</a>
+        <a href="{% if page.url == '/' or page.url == '/index.html' %}#a-propos{% else %}{{ '/' | relative_url }}#a-propos{% endif %}">À propos</a>
+        <a class="btn btn-primary" href="{% if page.url == '/' or page.url == '/index.html' or page.url == '/formations.html' %}#contact{% else %}{{ '/' | relative_url }}#contact{% endif %}">Nous écrire</a>
         {% endif %}
       </nav>
     </div>

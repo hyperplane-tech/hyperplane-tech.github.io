@@ -13,3 +13,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .claude/
+
+sass:
+  style: compressed
