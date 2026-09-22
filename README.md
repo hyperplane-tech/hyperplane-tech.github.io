@@ -1,30 +1,39 @@
 # hyperplane-tech.github.io
 
-Site vitrine d'Hyperplane Tech, formation et conseil en intelligence artificielle.
-Site statique, sans étape de compilation, publié par GitHub Pages sur
+Site vitrine d'Hyperplane, formation et conseil en intelligence artificielle.
+Site statique généré avec Jekyll, publié par GitHub Pages sur
 <https://www.hyperplane.fr>.
 
 ## Structure
 
 ```
-index.html            page principale (sections accueil, formations, conseil, approche, à propos, contact)
-mentions-legales.html mentions légales
-404.html              page d'erreur servie par GitHub Pages
-assets/style.css      feuille de style unique, thème clair et sombre
-assets/site.js        menu mobile et année du pied de page
-assets/favicon.svg    favicon
-CNAME                 domaine personnalisé, géré par GitHub Pages
-.nojekyll             désactive le traitement Jekyll
+_config.yml            configuration Jekyll du site
+_layouts/
+  default.html         gabarit principal (head, header, main, footer, scripts)
+_includes/
+  head.html            balises <head>, métadonnées SEO/Open Graph, polices, css
+  header.html          en-tête de site, logo SVG et navigation
+  footer.html          pied de page et liens
+index.html             page principale (sections accueil, formations, conseil, approche, à propos, contact)
+mentions-legales.html  mentions légales
+404.html               page d'erreur servie par GitHub Pages
+assets/style.css       feuille de style unique, thème clair et sombre
+assets/site.js         menu mobile et année du pied de page
+assets/favicon.svg     favicon
+CNAME                  domaine personnalisé, géré par GitHub Pages
 robots.txt sitemap.xml
 ```
 
 ## Développement local
 
-Aucune dépendance. Ouvrir `index.html` dans un navigateur, ou servir le dossier :
+Prérequis : Ruby, Bundler et Jekyll.
 
 ```
-python3 -m http.server 8000
+bundle install
+bundle exec jekyll serve
 ```
+
+Le site est ensuite accessible sur <http://localhost:4000>.
 
 ## Publication
 

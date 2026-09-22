@@ -1,0 +1,15 @@
+title: "Hyperplane — Service et formation en intelligence artificielle"
+title_short: "Hyperplane"
+name: "Hyperplane"
+description: "Hyperplane accompagne les organisations dans l'adoption de l'intelligence artificielle : formations sur mesure pour les équipes techniques et dirigeantes, conseil et cadrage de projets IA."
+og_description: "Formations sur mesure et conseil en intelligence artificielle, de la mise à niveau des équipes au cadrage de projets."
+url: "https://www.hyperplane.fr"
+baseurl: ""
+email: "contact@hyperplane.fr"
+lang: "fr"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .claude/

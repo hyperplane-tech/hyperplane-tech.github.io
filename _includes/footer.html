@@ -1,0 +1,15 @@
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> {{ site.title_short | default: 'Hyperplane' }}</span>
+      <nav class="footer-links">
+        {% if page.url == '/' or page.url == '/index.html' %}
+        <a href="#formations">Formations</a>
+        <a href="#conseil">Conseil</a>
+        <a href="mailto:{{ site.email }}">Contact</a>
+        <a href="{{ '/mentions-legales.html' | relative_url }}">Mentions légales</a>
+        {% else %}
+        <a href="{{ '/' | relative_url }}">Accueil</a>
+        {% endif %}
+      </nav>
+    </div>
+  </footer>

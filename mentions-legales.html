@@ -1,38 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
+---
+layout: default
+title: "Mentions légales — Hyperplane"
+description: "Mentions légales du site hyperplane.fr."
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mentions légales — Hyperplane Tech</title>
-  <meta name="description" content="Mentions légales du site hyperplane.fr.">
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/assets/style.css">
-</head>
-
-<body>
-
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/">
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
-          <rect x="0.5" y="0.5" width="25" height="25" rx="7" stroke="currentColor" stroke-opacity="0.22" />
-          <path class="mk-accent" d="M4 20L22 6" stroke="#2f4bd8" stroke-width="1.8" stroke-linecap="round" />
-          <circle cx="8" cy="8.5" r="2.1" fill="currentColor" />
-          <circle class="fl-accent" cx="18" cy="18.5" r="2.1" fill="#2f4bd8" />
-        </svg>
-        Hyperplane Tech
-      </a>
-      <nav class="nav"><a href="/">Retour au site</a></nav>
-    </div>
-  </header>
-
-  <main>
     <section>
       <div class="wrap" style="max-width:760px">
         <p class="eyebrow">Informations légales</p>
@@ -47,7 +18,7 @@
           SIREN / SIRET : à compléter<br>
           Numéro de TVA intracommunautaire : à compléter<br>
           Directeur de la publication : Nathanaël Fijalkow<br>
-          Contact : <a href="mailto:contact@hyperplane.fr">contact@hyperplane.fr</a>
+          Contact : <a href="mailto:{{ site.email }}">{{ site.email }}</a>
         </p>
 
         <h2>Activité de formation</h2>
@@ -86,16 +57,3 @@
         </p>
       </div>
     </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>&copy; <span id="year">2026</span> Hyperplane Tech</span>
-      <nav class="footer-links"><a href="/">Accueil</a></nav>
-    </div>
-  </footer>
-
-  <script src="/assets/site.js"></script>
-</body>
-
-</html>
